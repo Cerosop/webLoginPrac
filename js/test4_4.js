@@ -5,7 +5,6 @@ if(url.indexOf('?')!=-1){
     accountB = url.split('?')[1].split('=')[1];
     hi.innerHTML = "hi "+accountB;
 }
-var lis = [];
 
 var li1 = document.getElementById("li1");
 li1.href = "test4_1.html?account="+accountB;
@@ -90,7 +89,6 @@ headers: {
             let com = t[i]['comment'];
             let tim = t[i]['time'];
             let tim_2 = t[i]['time2'];
-            lis.push([id]);
             
 
             // 创建 回覆table 元素
@@ -123,7 +121,6 @@ headers: {
                         let rep = t2[j2]['reply'];
                         let tim2 = t2[j2]['time'];
                         let tim2_2 = t2[j2]['time2'];
-                        lis[j - 1].push(id2);
 
                         //創建修改留言區 table_id_id2_2
                         let table2Collapse2 = document.createElement("div");
@@ -741,8 +738,6 @@ function republic() {
         let arr = output.split("_");
         let id = arr[arr.length - 1];
 
-        lis.push([id]);
-
 
         // 创建 回覆table 元素
         let tableElement = document.createElement("table");
@@ -774,7 +769,6 @@ function republic() {
                     let rep = t2[j2]['reply'];
                     let tim2 = t2[j2]['time'];
                     let tim2_2 = t2[j2]['time2'];
-                    lis[j - 1].push(id2);
 
                     //創建修改留言區 table_id_id2_2
                     let table2Collapse2 = document.createElement("div");
