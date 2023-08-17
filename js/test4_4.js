@@ -1339,7 +1339,7 @@ function republic() {
         }
         
 
-        // 获取页面中的 table 元素，并添加主卡片
+        // 獲取頁面中的 table 元素，並添加主卡片
         let tableContainer = document.getElementById("table");
         tableContainer.insertBefore(mainCard, tableContainer.firstChild)
     })
